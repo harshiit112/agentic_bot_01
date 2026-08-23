@@ -29,3 +29,7 @@ app.mount(
 templates = Jinja2Templates(
     directory=str(BASE_DIR / "templates")
 )
+
+class TravelRequest(BaseModel):
+    message: str
+    thread_id: str | None = None
